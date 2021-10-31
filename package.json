@@ -1,0 +1,29 @@
+{
+  "name": "react-test",
+  "version": "1.0.0",
+  "main": "index.tsx",
+  "scripts": {
+    "dev": "run-p dev:*",
+    "dev:build": "NODE_ENV=development ts-node esbuild.config.ts",
+    "dev:serve": "wait-on public/index.js && reload -d public -p 3000 -b ",
+    "build": "NODE_ENV=production ts-node esbuild.config.ts",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2"
+  },
+  "devDependencies": {
+    "@types/node": "^15.0.3",
+    "@types/react": "^17.0.5",
+    "@types/react-dom": "^17.0.4",
+    "esbuild": "^0.11.20",
+    "npm-run-all": "^4.1.5",
+    "prettier": "^2.3.0",
+    "reload": "^3.1.1",
+    "ts-node": "^9.1.1",
+    "typescript": "^4.2.4",
+    "wait-on": "^5.3.0"
+  }
+}
